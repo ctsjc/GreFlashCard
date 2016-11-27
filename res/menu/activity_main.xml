@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/itmRemainder" android:title="Set Remainder" android:orderInCategory="100"></item>
+    <item android:id="@+id/itmHelp" android:orderInCategory="101" android:title="Help"></item>
+    <item android:id="@+id/itmDeck" android:title="Deck"></item>
+    <item android:id="@+id/itmAi" android:title="Activate AI"></item>
+    <item android:id="@+id/itExit" android:title="Exit"></item>
+    <item android:id="@+id/itmPopulate" android:title="Read Files"></item>
+    <item android:id="@+id/itmIntel" android:title="Fast Mode"></item>
+    <item android:id="@+id/itmAll" android:title="Reader"></item>
+</menu>

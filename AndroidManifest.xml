@@ -1,0 +1,42 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="enc.gre.flahcard.greflashcard"
+    android:versionCode="2"
+    android:versionName="2.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+        
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+           <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <receiver android:name="enc.gre.flahcard.greflashcard.alarm.TimeAlarm" />
+        <activity
+            android:name="enc.gre.flahcard.greflashcard.alarm.AlarmActivity"
+            android:label="alarm" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="enc.gre.flahcard.greflashcard.deck.DeckActivity"
+            android:label="DeckActivity" >
+        </activity>
+        
+          <activity
+            android:name="enc.gre.flahcard.greflashcard.deck.DeckMgmtActivity"
+            android:label="DeckActivity" >
+        </activity>
+    </application>
+    
+</manifest>
